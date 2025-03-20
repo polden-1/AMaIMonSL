@@ -20,7 +20,7 @@ ws = wb.active
 ws.append(["год", "месяц", "декада", "номер декады", "температура"])
 
 
-for year in range(1990, 2025):
+for year in range(2014, 2025):
     counter = 0
     for month in range(2, 6):
         for decade in range (1, 4):

@@ -7528,7 +7528,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [190]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [238]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7545,7 +7545,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [191]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [239]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># runpy.run_path('create-work-tables.py')</span>
@@ -7570,7 +7570,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [192]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [263]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">matrix_print</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
@@ -7592,7 +7592,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [193]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [264]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'температура-по-декадам.xlsx'</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">'openpyxl'</span><span class="p">)</span>
@@ -7606,7 +7606,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [194]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [242]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">T_max</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'температура'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
@@ -7651,7 +7651,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [195]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [243]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
@@ -7665,7 +7665,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[195]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[243]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Index(['год', 'месяц', 'декада', 'номер декады', 'температура'], dtype='object')</pre>
 </div>
@@ -7677,12 +7677,14 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [196]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [269]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">matrix_temp_year</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">min_year</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'год'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">cur_year</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'год'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 
-<span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">2025</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">min_year</span><span class="p">,</span> <span class="mi">2025</span><span class="p">):</span>
         <span class="nb">filter</span> <span class="o">=</span> <span class="p">(</span>
             <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'год'</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">)</span>
         <span class="p">)</span>
@@ -7701,10 +7703,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [197]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [270]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h3&gt;Ниже приведена таблица средних температур, где по вертикали годы от 2014 до 2024, а по горизонтали декады от 1 до 10&lt;h3&gt;"</span><span class="p">),</span> <span class="n">Latex</span><span class="p">(</span><span class="n">matrix_print</span><span class="p">(</span><span class="n">matrix_temp_year</span><span class="p">)))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="sa">f</span><span class="s2">"&lt;h3&gt;Ниже приведена таблица средних температур, где по вертикали годы от </span><span class="si">{</span><span class="n">min_year</span><span class="si">}</span><span class="s2"> до </span><span class="si">{</span><span class="n">cur_year</span><span class="si">}</span><span class="s2">, а по горизонтали декады от 1 до 10&lt;h3&gt;"</span><span class="p">),</span> <span class="n">Latex</span><span class="p">(</span><span class="n">matrix_print</span><span class="p">(</span><span class="n">matrix_temp_year</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
@@ -7717,13 +7719,17 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>Ниже приведена таблица средних температур, где по вертикали годы от 2014 до 2024, а по горизонтали декады от 1 до 10<h3>
+<h3>Ниже приведена таблица средних температур, где по вертикали годы от 2010 до 2024, а по горизонтали декады от 1 до 10<h3>
 </h3></h3></div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 \begin{bmatrix}
+-8.2400 &amp; -10.2000 &amp; -3.9000 &amp; -2.5200 &amp; -1.8500 &amp; 5.6000 &amp; 11.5300 &amp; 12.3300 &amp; 9.9500 &amp; 20.0900 \\ 
+-2.4600 &amp; -15.2900 &amp; -13.2375 &amp; -1.9900 &amp; 0.9800 &amp; 0.6182 &amp; 5.9000 &amp; 5.9900 &amp; 15.5700 &amp; 16.4600 \\ 
+-16.1300 &amp; -12.7100 &amp; -2.1778 &amp; -5.4300 &amp; -0.7300 &amp; -0.0364 &amp; 2.6000 &amp; 10.3400 &amp; 19.2000 &amp; 16.0500 \\ 
+-0.5500 &amp; -4.4200 &amp; -1.9250 &amp; -5.6100 &amp; -4.0100 &amp; -3.6364 &amp; 4.1300 &amp; 12.7000 &amp; 9.4100 &amp; 16.5000 \\ 
 -4.8300 &amp; 1.1500 &amp; 0.8250 &amp; 2.8300 &amp; 2.7200 &amp; 7.6909 &amp; 3.0700 &amp; 10.8000 &amp; 15.6500 &amp; 13.2900 \\ 
 -3.4400 &amp; -1.6700 &amp; 2.2250 &amp; 2.8800 &amp; 7.9300 &amp; 1.5818 &amp; 4.7000 &amp; 7.3300 &amp; 11.3200 &amp; 14.6700 \\ 
 0.7000 &amp; -1.2900 &amp; 0.6778 &amp; 2.4200 &amp; 0.8200 &amp; 3.5909 &amp; 7.2100 &amp; 11.1300 &amp; 12.2800 &amp; 19.3800 \\ 
@@ -7745,7 +7751,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [198]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [246]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'температура-февраль-2025.xlsx'</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">'openpyxl'</span><span class="p">)</span>
@@ -7774,7 +7780,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [199]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [247]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">T_range</span> <span class="o">=</span> <span class="n">T_min</span> <span class="o">+</span> <span class="n">T_range_len</span>
@@ -7826,7 +7832,7 @@ $\displaystyle \text{Ниже представлен вектор }\pi [1]$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [200]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [248]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;h1&gt;Вариант 1&lt;h1&gt;'</span><span class="p">))</span>
@@ -7852,7 +7858,7 @@ $\displaystyle \text{Ниже представлен вектор }\pi [1]$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [201]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [249]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">latex_str</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">begin</span><span class="si">{bmatrix}</span><span class="se">\n</span><span class="s2">"</span>
@@ -7897,7 +7903,7 @@ $\displaystyle \text{Ниже представлен вектор }\pi [1]$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [202]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [250]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">matrix_transition</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">T_range_count</span><span class="p">,</span> <span class="n">T_range_count</span><span class="p">))</span>
@@ -7949,11 +7955,11 @@ $\displaystyle \text{Ниже представлен вектор }\pi [1]$
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 \begin{bmatrix}
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.0000 &amp; 0.5000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.2000 &amp; 0.2000 &amp; 0.6000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.0000 &amp; 0.6667 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.1667 &amp; 0.1667 &amp; 0.6667 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.2500 &amp; 0.0000 &amp; 0.7500 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
@@ -7981,7 +7987,7 @@ $\displaystyle \text{Ниже представлен вектор }\pi [1]$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [203]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [251]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pi_10</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matrix_transition</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">pi_1</span><span class="p">)</span>
@@ -8006,9 +8012,9 @@ $\displaystyle \text{Ниже представлен вектор }\pi [1]$
 0.0000 \\ 
 0.0000 \\ 
 0.0000 \\ 
-0.3333 \\ 
+0.2500 \\ 
 0.0000 \\ 
-0.6667 \\ 
+0.7500 \\ 
 \end{bmatrix}
 </div>
 </div>
@@ -8019,14 +8025,20 @@ $\displaystyle \text{Ниже представлен вектор }\pi [1]$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [204]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [276]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">latex_str</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{В мае будет температура} </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
 
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">T_min</span><span class="p">,</span> <span class="n">T_max</span><span class="p">,</span> <span class="n">T_range_len</span><span class="p">):</span>
-    <span class="n">latex_str</span> <span class="o">+=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{в промежутке: от }"</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">row</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ до }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">row</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">T_range_len</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ с вероятностью }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">pi_10</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">" </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
+    <span class="nb">min</span> <span class="o">=</span> <span class="n">row</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">row</span> <span class="o">+</span> <span class="n">T_range_len</span>
+    <span class="k">if</span> <span class="nb">min</span> <span class="o">==</span> <span class="n">T_min</span><span class="p">:</span>
+        <span class="nb">min</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="k">if</span> <span class="nb">max</span> <span class="o">&gt;=</span> <span class="n">T_max</span><span class="p">:</span>
+        <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="n">latex_str</span> <span class="o">+=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{в промежутке: от }"</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">min</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ до }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">max</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ с вероятностью }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">pi_10</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">" </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
     <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="n">display</span><span class="p">(</span><span class="n">Math</span><span class="p">(</span><span class="n">latex_str</span><span class="p">))</span>
 </pre></div>
@@ -8042,16 +8054,16 @@ $\displaystyle \text{Ниже представлен вектор }\pi [1]$
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 $\displaystyle \text{В мае будет температура} \\ 
-\text{в промежутке: от }-16.1300\text{ до }-12.5079\text{ с вероятностью }0.0000 \\ 
+\text{в промежутке: от }-inf\text{ до }-12.5079\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }-12.5079\text{ до }-8.8858\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }-8.8858\text{ до }-5.2637\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }-5.2637\text{ до }-1.6416\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }-1.6416\text{ до }1.9805\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }1.9805\text{ до }5.6026\text{ с вероятностью }0.0000 \\ 
-\text{в промежутке: от }5.6026\text{ до }9.2247\text{ с вероятностью }0.0000 \\ 
-\text{в промежутке: от }9.2247\text{ до }12.8468\text{ с вероятностью }0.3333 \\ 
-\text{в промежутке: от }12.8468\text{ до }16.4689\text{ с вероятностью }0.0000 \\ 
-\text{в промежутке: от }16.4689\text{ до }20.0910\text{ с вероятностью }0.6667 \\ 
+\text{в промежутке: от }5.6026\text{ до }9.2247\text{ с вероятностью }0.0671 \\ 
+\text{в промежутке: от }9.2247\text{ до }12.8468\text{ с вероятностью }0.2660 \\ 
+\text{в промежутке: от }12.8468\text{ до }16.4689\text{ с вероятностью }0.3331 \\ 
+\text{в промежутке: от }16.4689\text{ до }inf\text{ с вероятностью }0.3338 \\ 
 $
 </div>
 </div>
@@ -8062,7 +8074,7 @@ $
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [205]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [253]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;h1&gt;Вариант 2&lt;h1&gt;'</span><span class="p">))</span>
@@ -8088,7 +8100,7 @@ $
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [206]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [254]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">matrix_transition</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">T_range_count</span><span class="p">,</span> <span class="n">T_range_count</span><span class="p">))</span>
@@ -8140,16 +8152,16 @@ $
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 \begin{bmatrix}
-0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.0000 &amp; 0.5000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.1667 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0909 &amp; 0.1818 &amp; 0.0909 &amp; 0.4545 &amp; 0.1818 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0870 &amp; 0.4348 &amp; 0.4348 &amp; 0.0435 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0417 &amp; 0.3750 &amp; 0.5000 &amp; 0.0833 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0667 &amp; 0.2000 &amp; 0.0667 &amp; 0.4000 &amp; 0.2000 &amp; 0.0667 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.4545 &amp; 0.3636 &amp; 0.1818 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.4000 &amp; 0.4000 &amp; 0.2000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 \\ 
+0.4000 &amp; 0.0000 &amp; 0.2000 &amp; 0.4000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.3333 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.1111 &amp; 0.1111 &amp; 0.0000 &amp; 0.4444 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0476 &amp; 0.0476 &amp; 0.1905 &amp; 0.2381 &amp; 0.2857 &amp; 0.1905 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.1071 &amp; 0.4286 &amp; 0.3929 &amp; 0.0714 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0370 &amp; 0.3333 &amp; 0.4444 &amp; 0.1852 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0588 &amp; 0.1765 &amp; 0.1176 &amp; 0.3529 &amp; 0.2353 &amp; 0.0588 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.4706 &amp; 0.2353 &amp; 0.2941 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.3333 &amp; 0.3333 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.5000 \\ 
 \end{bmatrix}
 </div>
 </div>
@@ -8172,7 +8184,7 @@ $
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [207]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [255]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pi_10</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_power</span><span class="p">(</span><span class="n">matrix_transition</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span> <span class="n">pi_1</span><span class="p">)</span>
@@ -8190,16 +8202,16 @@ $
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 \begin{bmatrix}
-0.0006 \\ 
-0.0008 \\ 
-0.0028 \\ 
-0.0067 \\ 
-0.0396 \\ 
-0.0885 \\ 
-0.1249 \\ 
-0.2389 \\ 
-0.1492 \\ 
-0.3482 \\ 
+0.0027 \\ 
+0.0013 \\ 
+0.0042 \\ 
+0.0126 \\ 
+0.0367 \\ 
+0.0725 \\ 
+0.1426 \\ 
+0.2833 \\ 
+0.2697 \\ 
+0.1743 \\ 
 \end{bmatrix}
 </div>
 </div>
@@ -8210,14 +8222,20 @@ $
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [208]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [275]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">latex_str</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{В мае будет температура} </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
 
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">T_min</span><span class="p">,</span> <span class="n">T_max</span><span class="p">,</span> <span class="n">T_range_len</span><span class="p">):</span>
-    <span class="n">latex_str</span> <span class="o">+=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{в промежутке: от }"</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">row</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ до }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">row</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">T_range_len</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ с вероятностью }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">pi_10</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">" </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
+    <span class="nb">min</span> <span class="o">=</span> <span class="n">row</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">row</span> <span class="o">+</span> <span class="n">T_range_len</span>
+    <span class="k">if</span> <span class="nb">min</span> <span class="o">==</span> <span class="n">T_min</span><span class="p">:</span>
+        <span class="nb">min</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="k">if</span> <span class="nb">max</span> <span class="o">&gt;=</span> <span class="n">T_max</span><span class="p">:</span>
+        <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="n">latex_str</span> <span class="o">+=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{в промежутке: от }"</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">min</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ до }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">max</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ с вероятностью }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">pi_10</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">" </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
     <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="n">display</span><span class="p">(</span><span class="n">Math</span><span class="p">(</span><span class="n">latex_str</span><span class="p">))</span>
 </pre></div>
@@ -8233,16 +8251,16 @@ $
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 $\displaystyle \text{В мае будет температура} \\ 
-\text{в промежутке: от }-16.1300\text{ до }-12.5079\text{ с вероятностью }0.0006 \\ 
-\text{в промежутке: от }-12.5079\text{ до }-8.8858\text{ с вероятностью }0.0008 \\ 
-\text{в промежутке: от }-8.8858\text{ до }-5.2637\text{ с вероятностью }0.0028 \\ 
-\text{в промежутке: от }-5.2637\text{ до }-1.6416\text{ с вероятностью }0.0067 \\ 
-\text{в промежутке: от }-1.6416\text{ до }1.9805\text{ с вероятностью }0.0396 \\ 
-\text{в промежутке: от }1.9805\text{ до }5.6026\text{ с вероятностью }0.0885 \\ 
-\text{в промежутке: от }5.6026\text{ до }9.2247\text{ с вероятностью }0.1249 \\ 
-\text{в промежутке: от }9.2247\text{ до }12.8468\text{ с вероятностью }0.2389 \\ 
-\text{в промежутке: от }12.8468\text{ до }16.4689\text{ с вероятностью }0.1492 \\ 
-\text{в промежутке: от }16.4689\text{ до }20.0910\text{ с вероятностью }0.3482 \\ 
+\text{в промежутке: от }-inf\text{ до }-12.5079\text{ с вероятностью }0.0000 \\ 
+\text{в промежутке: от }-12.5079\text{ до }-8.8858\text{ с вероятностью }0.0000 \\ 
+\text{в промежутке: от }-8.8858\text{ до }-5.2637\text{ с вероятностью }0.0000 \\ 
+\text{в промежутке: от }-5.2637\text{ до }-1.6416\text{ с вероятностью }0.0000 \\ 
+\text{в промежутке: от }-1.6416\text{ до }1.9805\text{ с вероятностью }0.0000 \\ 
+\text{в промежутке: от }1.9805\text{ до }5.6026\text{ с вероятностью }0.0000 \\ 
+\text{в промежутке: от }5.6026\text{ до }9.2247\text{ с вероятностью }0.0671 \\ 
+\text{в промежутке: от }9.2247\text{ до }12.8468\text{ с вероятностью }0.2660 \\ 
+\text{в промежутке: от }12.8468\text{ до }16.4689\text{ с вероятностью }0.3331 \\ 
+\text{в промежутке: от }16.4689\text{ до }inf\text{ с вероятностью }0.3338 \\ 
 $
 </div>
 </div>
@@ -8253,7 +8271,7 @@ $
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [209]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [257]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;h1&gt;Вариант 3&lt;h1&gt;'</span><span class="p">))</span>
@@ -8279,7 +8297,7 @@ $
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [210]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [258]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">matrix_transition</span> <span class="o">=</span> <span class="p">[]</span>
@@ -8340,11 +8358,11 @@ $
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 \begin{bmatrix}
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.5000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.2000 &amp; 0.2000 &amp; 0.4000 &amp; 0.2000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.6667 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.3333 &amp; 0.3333 &amp; 0.0000 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.1667 &amp; 0.0000 &amp; 0.1667 &amp; 0.1667 &amp; 0.3333 &amp; 0.1667 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.5000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
@@ -8363,10 +8381,10 @@ $
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 \begin{bmatrix}
-0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.3333 &amp; 0.0000 &amp; 0.3333 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.3333 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.2500 &amp; 0.2500 &amp; 0.2500 &amp; 0.0000 &amp; 0.2500 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.2000 &amp; 0.8000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
@@ -8386,10 +8404,10 @@ $
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 \begin{bmatrix}
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.5000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.2500 &amp; 0.2500 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.4000 &amp; 0.6000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
@@ -8411,8 +8429,8 @@ $
 \begin{bmatrix}
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.6667 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.6667 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.5000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.2000 &amp; 0.6000 &amp; 0.2000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
@@ -8435,8 +8453,8 @@ $
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.3333 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.6667 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.4000 &amp; 0.6000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
@@ -8458,9 +8476,9 @@ $
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.5000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.1667 &amp; 0.8333 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.1429 &amp; 0.7143 &amp; 0.1429 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.0000 &amp; 0.3333 &amp; 0.3333 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
@@ -8483,8 +8501,8 @@ $
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.6667 &amp; 0.3333 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.1667 &amp; 0.3333 &amp; 0.1667 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.4000 &amp; 0.6000 &amp; 0.0000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.2857 &amp; 0.2857 &amp; 0.2857 &amp; 0.1429 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
@@ -8507,8 +8525,8 @@ $
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.5000 &amp; 0.0000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.6667 &amp; 0.0000 &amp; 0.3333 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.4000 &amp; 0.6000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.2500 &amp; 0.2500 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.3750 &amp; 0.1250 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 \end{bmatrix}
@@ -8531,9 +8549,9 @@ $
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 \\ 
 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.5000 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.4000 &amp; 0.2000 &amp; 0.4000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.3333 &amp; 0.3333 &amp; 0.3333 &amp; 0.0000 \\ 
-0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 1.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.2857 &amp; 0.1429 &amp; 0.5714 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.2500 &amp; 0.2500 &amp; 0.5000 &amp; 0.0000 \\ 
+0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.0000 &amp; 0.5000 &amp; 0.5000 \\ 
 \end{bmatrix}
 </div>
 </div>
@@ -8556,7 +8574,7 @@ $
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [211]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [259]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">tmp_dot</span> <span class="o">=</span> <span class="n">matrix_transition</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>
@@ -8583,10 +8601,10 @@ $
 0.0000 \\ 
 0.0000 \\ 
 0.0000 \\ 
-0.0912 \\ 
-0.3630 \\ 
-0.2719 \\ 
-0.2739 \\ 
+0.0671 \\ 
+0.2660 \\ 
+0.3331 \\ 
+0.3338 \\ 
 \end{bmatrix}
 </div>
 </div>
@@ -8597,14 +8615,20 @@ $
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [212]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [274]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">latex_str</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{В мае будет температура} </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
 
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">T_min</span><span class="p">,</span> <span class="n">T_max</span><span class="p">,</span> <span class="n">T_range_len</span><span class="p">):</span>
-    <span class="n">latex_str</span> <span class="o">+=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{в промежутке: от }"</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">row</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ до }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">row</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">T_range_len</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ с вероятностью }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">pi_10</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">" </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
+    <span class="nb">min</span> <span class="o">=</span> <span class="n">row</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">row</span> <span class="o">+</span> <span class="n">T_range_len</span>
+    <span class="k">if</span> <span class="nb">min</span> <span class="o">==</span> <span class="n">T_min</span><span class="p">:</span>
+        <span class="nb">min</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="k">if</span> <span class="nb">max</span> <span class="o">&gt;=</span> <span class="n">T_max</span><span class="p">:</span>
+        <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="n">latex_str</span> <span class="o">+=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{в промежутке: от }"</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">min</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ до }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">max</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">text{ с вероятностью }"</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">pi_10</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">" </span><span class="se">\\\\</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span>
     <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="n">display</span><span class="p">(</span><span class="n">Math</span><span class="p">(</span><span class="n">latex_str</span><span class="p">))</span>
 </pre></div>
@@ -8620,16 +8644,16 @@ $
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
 $\displaystyle \text{В мае будет температура} \\ 
-\text{в промежутке: от }-16.1300\text{ до }-12.5079\text{ с вероятностью }0.0000 \\ 
+\text{в промежутке: от }-inf\text{ до }-12.5079\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }-12.5079\text{ до }-8.8858\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }-8.8858\text{ до }-5.2637\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }-5.2637\text{ до }-1.6416\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }-1.6416\text{ до }1.9805\text{ с вероятностью }0.0000 \\ 
 \text{в промежутке: от }1.9805\text{ до }5.6026\text{ с вероятностью }0.0000 \\ 
-\text{в промежутке: от }5.6026\text{ до }9.2247\text{ с вероятностью }0.0912 \\ 
-\text{в промежутке: от }9.2247\text{ до }12.8468\text{ с вероятностью }0.3630 \\ 
-\text{в промежутке: от }12.8468\text{ до }16.4689\text{ с вероятностью }0.2719 \\ 
-\text{в промежутке: от }16.4689\text{ до }20.0910\text{ с вероятностью }0.2739 \\ 
+\text{в промежутке: от }5.6026\text{ до }9.2247\text{ с вероятностью }0.0671 \\ 
+\text{в промежутке: от }9.2247\text{ до }12.8468\text{ с вероятностью }0.2660 \\ 
+\text{в промежутке: от }12.8468\text{ до }16.4689\text{ с вероятностью }0.3331 \\ 
+\text{в промежутке: от }16.4689\text{ до }inf\text{ с вероятностью }0.3338 \\ 
 $
 </div>
 </div>
